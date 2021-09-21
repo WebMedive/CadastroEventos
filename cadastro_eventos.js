@@ -1,24 +1,41 @@
-const dataEvento = 12/10/2021;
-const dataHoje = 11/10/2021;
-idade = 18;
-participantes = [];
+var nome = "Anderson"
+var idade = 17
+var dataEvento = "29/09/2021"
+var dataAtual = "21/09/2021"
+var qtd = 4
+const participantes = ["Juliana", "Paula", "Marcio", "Rodrigo"]
 
-if ((dataEvento - dataHoje) <= 0) {
-    console.log("Data inválida");
+console.log("Cadastro de Eventos");
+console.log("");
+console.log("Data atual: " + dataAtual);
+console.log("");
+console.log("A data do evento é: " + dataEvento); 
+
+if(dataEvento == dataAtual) {
+    console.log("Não é possível realizar o cadastro")
+    console.log("Consulte a data do evento e tente novemente!")
 }
 else {
-    if (idade < 18){
-        console.log("Impossível marcar, pois idade é inferior a 18 anos.");
-    }
-    else {       
-        if (participantes.length <100) {
-            participantes.push ("Anderson de Carvalho");
-            console.log("Participante adicionado");
-            console.log(participantes);
-        }
-            else {
-                console.log("Limite de participantes atingido");
-            }
-            
-        }        
-    }
+    console.log("Cadastro em Andamento!")
+}
+
+console.log("Nome do participante: " + nome + ", e sua idade é: " + idade + " anos");
+
+if( idade >= 18){
+    console.log("Idade permitida")
+    console.log("Cadastro em andamento!")
+}else {
+    console.log("Menor de 18 anos, cadastro não permitido!")
+}
+console.log("")
+console.log("Lista de participantes")
+console.log("" + participantes)
+console.log("Quantidade de participantes " + qtd)
+console.log("")
+if(qtd >100){
+    console.log("Cadastro não realizado")
+    console.log("Quantidade excedeu o limite de 100 pessoas!")
+}
+else {
+    console.log("Cadastro concluído com sucesso!")
+}
